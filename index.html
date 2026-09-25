@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise E-Commerce Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Digital Retail Showcase</h1>
+            <div class="cart-status">
+                Cart: <span id="cart-count">0</span> items
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Filters -->
+        <aside class="filters-sidebar">
+            <h3>Search & Filter</h3>
+            
+            <div class="filter-group">
+                <label for="search-input">Search Products</label>
+                <input type="text" id="search-input" placeholder="Type to search...">
+            </div>
+
+            <div class="filter-group">
+                <label for="category-select">Category</label>
+                <select id="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="apparel">Apparel</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-range">Max Price: $<span id="price-value">200</span></label>
+                <input type="range" id="price-range" min="0" max="200" value="200">
+            </div>
+        </aside>
+
+        <!-- Main Product Grid -->
+        <main class="products-grid" id="products-grid">
+            <!-- Dynamic products will render here -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
