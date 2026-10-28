@@ -1,53 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise E-Commerce Catalog</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Northstar — thoughtfully selected everyday essentials.">
+  <title>Northstar | Home</title><link rel="stylesheet" href="css/style.css">
+  <script defer src="js/products.js"></script><script defer src="js/app.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Digital Retail Showcase</h1>
-            <div class="cart-status">
-                Cart: <span id="cart-count">0</span> items
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <!-- Sidebar Filters -->
-        <aside class="filters-sidebar">
-            <h3>Search & Filter</h3>
-            
-            <div class="filter-group">
-                <label for="search-input">Search Products</label>
-                <input type="text" id="search-input" placeholder="Type to search...">
-            </div>
-
-            <div class="filter-group">
-                <label for="category-select">Category</label>
-                <select id="category-select">
-                    <option value="all">All Categories</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="apparel">Apparel</option>
-                    <option value="accessories">Accessories</option>
-                </select>
-            </div>
-
-            <div class="filter-group">
-                <label for="price-range">Max Price: $<span id="price-value">200</span></label>
-                <input type="range" id="price-range" min="0" max="200" value="200">
-            </div>
-        </aside>
-
-        <!-- Main Product Grid -->
-        <main class="products-grid" id="products-grid">
-            <!-- Dynamic products will render here -->
-        </main>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  <div class="announcement">Free shipping on orders over ₹2,499 <span> • </span> Thoughtful finds, delivered</div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">N</span> northstar<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a class="active" href="index.html">Home</a><a href="shop.html">Shop</a><a href="shop.html?category=Tech">Technology</a><a href="shop.html?category=Home">Home & Living</a></nav>
+    <div class="header-actions"><a class="icon-link" href="wishlist.html" aria-label="Wishlist">♡ <span class="count" id="wishlist-count">0</span></a><a class="icon-link" href="cart.html" aria-label="Shopping cart">Bag <span class="count" id="cart-count">0</span></a></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">THE EVERYDAY EDIT · VOL. 04</p><h1>Good things.<br><em>Better living.</em></h1><p>Discover well-designed essentials for the way you live, work, and unwind.</p><div class="hero-buttons"><a class="button button-dark" href="shop.html">Explore the collection <span>↗</span></a><a class="text-link" href="#featured">See what's new</a></div><div class="hero-proof"><span>✦ Curated essentials</span><span>✦ Quality-first picks</span></div></div>
+      <div class="hero-art"><div class="hero-image"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1200&q=85" alt="Minimal modern interior with carefully selected home objects"></div><div class="floating-note"><span class="note-icon">✳</span><div><strong>Made for everyday</strong><small>Useful, beautiful, considered.</small></div></div><div class="hero-stamp">N° 01<br><small>THE EDIT</small></div></div>
+    </section>
+    <section class="category-strip section-wrap"><a class="category-tile category-tech" href="shop.html?category=Tech"><span class="category-symbol">⌁</span><span><small>01 / SMART LIVING</small><strong>Technology</strong></span><b>↗</b></a><a class="category-tile category-home" href="shop.html?category=Home"><span class="category-symbol">⌂</span><span><small>02 / YOUR SPACE</small><strong>Home & Living</strong></span><b>↗</b></a><a class="category-tile category-style" href="shop.html?category=Fashion"><span class="category-symbol">✳</span><span><small>03 / DAILY UNIFORM</small><strong>Style</strong></span><b>↗</b></a><a class="category-tile category-accessories" href="shop.html?category=Accessories"><span class="category-symbol">◌</span><span><small>04 / LITTLE DETAILS</small><strong>Accessories</strong></span><b>↗</b></a></section>
+    <section class="section-wrap section-block" id="featured"><div class="section-heading"><div><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Meet the <em>favourites.</em></h2></div><a class="text-link" href="shop.html">Shop all products ↗</a></div><div class="product-grid" id="featured-products"></div></section>
+    <section class="editorial section-wrap"><div class="editorial-image"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1000&q=85" alt="Warm and minimal living space"></div><div class="editorial-copy"><p class="eyebrow">LESS, BUT BETTER</p><h2>Make room for<br><em>what matters.</em></h2><p>From your desk to your downtime, find pieces that make everyday routines feel a little more intentional.</p><a class="button button-light" href="shop.html?category=Home">Explore home essentials ↗</a></div></section>
+    <section class="section-wrap section-block"><div class="section-heading"><div><p class="eyebrow">THE NORTHSTAR PROMISE</p><h2>Shopping, <em>made simple.</em></h2></div></div><div class="promise-grid"><article><span>01</span><h3>Considered choices</h3><p>A curated catalogue, so finding something useful feels effortless.</p></article><article><span>02</span><h3>Easy by design</h3><p>Clear prices, simple checkout, and a cart that stays with you.</p></article><article><span>03</span><h3>Made for your pace</h3><p>Browse on your phone or desktop with a responsive experience.</p></article></div></section>
+    <section class="newsletter"><p class="eyebrow">A NOTE FROM NORTHSTAR</p><h2>Good finds, occasionally.</h2><p>Get product edits and new-arrival updates. No noise.</p><form id="newsletter-form" class="newsletter-form"><input type="email" id="newsletter-email" placeholder="Your email address" required><button class="button button-dark" type="submit">Keep me posted ↗</button></form><small class="muted">Demo form — no email will be sent.</small></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">N</span> northstar<span class="brand-dot">.</span></a><p>Everyday essentials, thoughtfully selected.</p><div class="footer-links"><a href="shop.html">Shop</a><a href="wishlist.html">Wishlist</a><a href="orders.html">Orders</a><a href="login.html">Account</a></div><small>© 2026 Northstar Studio · Portfolio demo project</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>
