@@ -38,3 +38,5 @@ Cart, wishlist, demo profile, and demo orders are stored in browser `localStorag
 
 ## Tech stack
 HTML5 · CSS3 · Vanilla JavaScript · localStorage · Responsive design
+
+🔗 **Live demo:** https://ankesh0289.github.io/Shopping-Cart/
